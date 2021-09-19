@@ -145,7 +145,7 @@ public class GraphView extends View {
             canvas.drawLine(0, mPointerLocation.y, canvas.getWidth(), mPointerLocation.y, mPaintPointer); //horizontal line
         }
     }
-
+//asdadsa
     private void drawPointerCircle(Canvas canvas) {
         if (mPointerAnimator.isRunning()) {
             mPaintPointer.setAlpha((int) (mPointerAnimator.getAnimatedFraction() * 255));

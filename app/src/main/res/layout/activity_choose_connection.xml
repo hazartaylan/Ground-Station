@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#1a1a1a"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ChooseConnection">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/iha"/>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/roket"/>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/uydu2a"/>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/uydu2a"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Select Communucation Type"
+            android:fontFamily="@font/gravityb"
+            android:textSize="21dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#1a1a1a"
+            android:id="@+id/i1"
+            android:layout_marginLeft="30dp"
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/tower"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UDP Connection"
+                android:textColor="#fff"
+                android:layout_marginTop="95dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_regular"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/i2"
+            app:cardBackgroundColor="#800000"
+            app:cardCornerRadius="8dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/et_bg">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/tower2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TCP/IP Connection"
+                android:textColor="#fff"
+                android:layout_marginTop="95dp"
+                android:textSize="13dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_regular"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            app:cardBackgroundColor="#800000"
+            android:layout_height="130dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/et_bg">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/port"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serial Port Connection"
+                android:layout_marginTop="95dp"
+                android:textColor="#fff"
+                android:textSize="11dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_regular"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:cardBackgroundColor="#1a1a1a"
+            app:cardCornerRadius="8dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/et_bg">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/uav"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UAV Controller"
+                android:layout_marginTop="95dp"
+                android:textSize="13dp"
+                android:textColor="#fff"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_regular"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

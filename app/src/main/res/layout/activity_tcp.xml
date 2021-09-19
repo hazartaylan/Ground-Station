@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/tcplog"
+            android:src="@drawable/logoana"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Gönderilen komutlar:"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_tx"
+            android:id="@+id/send_textView"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_btn"
+            android:onClick="clear1"
+            android:text="Temizle"
+            android:textColor="#ffffff" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Gelen veriler:"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_tx"
+            android:id="@+id/receive_textView"
+            android:textIsSelectable="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_btn"
+                android:onClick="clear2"
+                android:text="Temizle"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_tx"
+
+                android:textColor="#800000"
+                android:paddingLeft="10dp"
+                android:textColorHint="#800000"
+                android:id="@+id/send_editText"
+                android:hint="Komut gir"/>
+
+            <Button
+                android:id="@+id/send_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_btn"
+                android:onClick="sendMessage"
+                android:text="Gönder"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/bg_btn"
+                android:onClick="connect"
+                android:text="Bağlan"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/bg_btn"
+                android:onClick="disconnect"
+                android:text="Bağlantıyı kes"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

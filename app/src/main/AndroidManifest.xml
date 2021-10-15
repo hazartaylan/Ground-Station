@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="app.hty.gaziuzaygroundstation">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,17 +13,38 @@
         android:roundIcon="@drawable/logogazi"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
-        <activity android:name=".Test"></activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.HomeAct"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.UploadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.FeedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ForgotActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Login"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Intro"
+            android:exported="true" />
+        <activity android:name=".Activity.Test" />
+        <activity
+            android:name=".Activity.MainActivity"
             android:screenOrientation="landscape"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".TcpActivity"
+            android:name=".Activity.TcpActivity"
             android:screenOrientation="landscape"
             tools:ignore="LockedOrientationActivity" />
-        <activity android:name=".ChooseConnection" />
-        <activity android:name=".SplashScreen">
+        <activity android:name=".Activity.ChooseConnection" />
+        <activity android:name=".Activity.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

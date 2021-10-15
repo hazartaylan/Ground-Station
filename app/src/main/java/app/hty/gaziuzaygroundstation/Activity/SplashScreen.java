@@ -1,10 +1,12 @@
-package app.hty.gaziuzaygroundstation;
+package app.hty.gaziuzaygroundstation.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import app.hty.gaziuzaygroundstation.R;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -17,7 +19,7 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void run() {
                 finish();
-                Intent i = new Intent(SplashScreen.this,ChooseConnection.class);
+                Intent i = new Intent(SplashScreen.this, Intro.class);
                 startActivity(i);
 
             }

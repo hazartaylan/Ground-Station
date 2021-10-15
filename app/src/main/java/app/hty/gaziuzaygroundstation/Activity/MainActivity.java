@@ -1,4 +1,4 @@
-package app.hty.gaziuzaygroundstation;
+package app.hty.gaziuzaygroundstation.Activity;
 
 import android.nfc.Tag;
 import android.os.Bundle;
@@ -22,6 +22,10 @@ import java.util.Date;
 import java.util.Random;
 
 import static android.content.ContentValues.TAG;
+
+import app.hty.gaziuzaygroundstation.GraphView;
+import app.hty.gaziuzaygroundstation.R;
+import app.hty.gaziuzaygroundstation.UDPBuild;
 
 public class MainActivity extends AppCompatActivity {
     private UDPBuild udpBuild;

@@ -1,4 +1,4 @@
-package app.hty.gaziuzaygroundstation;
+package app.hty.gaziuzaygroundstation.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -6,6 +6,8 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import app.hty.gaziuzaygroundstation.R;
 
 public class ChooseConnection extends AppCompatActivity {
     CardView i1,i2,i3,i4;
@@ -19,7 +21,7 @@ public class ChooseConnection extends AppCompatActivity {
         i1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(ChooseConnection.this,MainActivity.class);
+                Intent i=new Intent(ChooseConnection.this, MainActivity.class);
                 startActivity(i);
             }
 
@@ -27,7 +29,7 @@ public class ChooseConnection extends AppCompatActivity {
         i2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i2=new Intent(ChooseConnection.this,TcpActivity.class);
+                Intent i2=new Intent(ChooseConnection.this, TcpActivity.class);
                 startActivity(i2);
             }
         });

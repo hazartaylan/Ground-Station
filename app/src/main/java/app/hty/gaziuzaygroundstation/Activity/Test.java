@@ -1,4 +1,4 @@
-package app.hty.gaziuzaygroundstation;
+package app.hty.gaziuzaygroundstation.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import java.util.Random;
+
+import app.hty.gaziuzaygroundstation.GraphView;
+import app.hty.gaziuzaygroundstation.R;
 
 public class Test extends AppCompatActivity {
 GraphView mGraphView;

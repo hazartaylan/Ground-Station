@@ -6,7 +6,7 @@
     android:background="#1a1a1a"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".ChooseConnection">
+    tools:context=".Activity.ChooseConnection">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +16,7 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginLeft="30dp"
-            android:src="@drawable/iha"/>
+            android:src="@drawable/iha2"/>
         <ImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
